@@ -222,9 +222,8 @@
         document.getElementById('meta').textContent =
           '最后更新：' + (d.generated_at || '未知') +
           '｜数据源：' + (d.source || '未知') +
-          '｜Worker：' + (d.worker_host || '未知');
-        document.getElementById('sub-url').textContent =
-          location.origin + location.pathname.replace(/[^/]*$/, '') + 'nodes.txt';
+          '｜Worker：' + ('' || '未知');
+        // document.getElementById('sub-url').textContent = location.origin + location.pathname.replace(/[^/]*$/, '') + 'nodes.txt';
       }
 
       function nodeMatches(node, country) {
